@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_home"
+    tools:context=".activities.HomeActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_category"
+            android:layout_width="212dp"
+            android:layout_height="212dp"
+            android:src="@drawable/bg_category"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.example.baseproject.utils.StrokedTextView
+            android:id="@+id/tv_category"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginBottom="38dp"
+            android:gravity="center"
+            android:fontFamily="@font/grold_rounded_slim"
+            android:text="CATEGORY"
+            android:textColor="@color/orange_Color"
+            android:textSize="23sp"
+            app:layout_constraintBottom_toBottomOf="@id/iv_category"
+            app:layout_constraintEnd_toEndOf="@id/iv_category"
+            app:layout_constraintStart_toStartOf="@id/iv_category"
+            app:strokeColor="@color/white"
+            app:strokeThickness="4dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="26dp"
+        app:layout_constraintBottom_toTopOf="@id/layout_category"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_time"
+            android:layout_width="172dp"
+            android:layout_height="172dp"
+            android:src="@drawable/bg_time"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.example.baseproject.utils.StrokedTextView
+            android:id="@+id/tv_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="23dp"
+            android:fontFamily="@font/grold_rounded_slim"
+            android:gravity="center"
+            android:text="TIME"
+            android:textColor="@color/orange_Color"
+            android:textSize="23sp"
+            app:layout_constraintBottom_toBottomOf="@id/iv_time"
+            app:layout_constraintEnd_toEndOf="@id/iv_time"
+            app:layout_constraintStart_toStartOf="@id/iv_time"
+            app:strokeColor="@color/white"
+            app:strokeThickness="4dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/btn_Play"
+        android:layout_width="204dp"
+        android:layout_height="103dp"
+        android:layout_marginBottom="57dp"
+        android:src="@drawable/btn_play"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

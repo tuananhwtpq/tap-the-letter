@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/settime_bg"
+        android:clipToOutline="true">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcvPopupData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintHeight_max="300dp"
+            android:minHeight="80dp"
+            android:paddingHorizontal="16dp"
+            android:overScrollMode="never"
+            android:scrollbars="vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:itemCount="5"
+            tools:listitem="@layout/item_dropdown_option" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

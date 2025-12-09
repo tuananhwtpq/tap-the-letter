@@ -4,7 +4,6 @@ import java.text.SimpleDateFormat
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
-    alias(libs.plugins.compose.compiler)
 }
 
 android {
@@ -50,7 +49,6 @@ android {
 
     buildFeatures {
         viewBinding = true
-        compose = true
     }
 
     bundle {
@@ -85,24 +83,5 @@ dependencies {
 
     implementation("me.tankery.lib:circularSeekBar:1.4.2")
 
-
-    //compose
-    implementation("androidx.compose.ui:ui")
-    // Tooling support (for previews in Android Studio)
-    debugImplementation("androidx.compose.ui:ui-tooling")
-    // Foundation components (e.g., Row, Column, Box)
-    implementation("androidx.compose.foundation:foundation")
-    // Material Design components
-    implementation("androidx.compose.material:material")
-    // Material 3 Design components (newer version)
-    implementation("androidx.compose.material3:material3")
-    // Live preview support
-    debugImplementation("androidx.compose.ui:ui-tooling-preview")
-    // Activity integration
-    implementation("androidx.activity:activity-compose:1.8.2") // Or the latest version
-    // ViewModel integration
-    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0") // Or the latest version
-    // Navigation integration
-    implementation("androidx.navigation:navigation-compose:2.7.6") // Or the latest version
 
 }

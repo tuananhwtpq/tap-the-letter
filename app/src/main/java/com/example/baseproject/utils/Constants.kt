@@ -6,4 +6,6 @@ object Constants {
     const val HAWK_LANGUAGE_POSITION = "LANGUAGE"
     const val PRIVACY_POLICY = ""
 
+    const val SET_TIME = ""
+
 }

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".fragments.ResultFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_total"
+        android:layout_width="match_parent"
+        android:layout_height="222dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/bg_settime_dialog"
+        android:paddingHorizontal="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            android:fontFamily="@font/grold_rounded_slim"
+            android:textColor="@color/white"
+            android:textSize="33sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="You Won!" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <LinearLayout
+                android:id="@+id/layout_home"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_rounded_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="9dp">
+
+                <TextView
+                    android:id="@+id/tv_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/home_button_bg"
+                    android:fontFamily="@font/grold_rounded_slim"
+                    android:gravity="center"
+                    android:text="HOME"
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="12dp"
+                android:layout_height="12dp" />
+
+            <LinearLayout
+                android:id="@+id/layoutReplay"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_rounded_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="9dp">
+
+                <TextView
+                    android:id="@+id/tv_replay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/replay_button_bg"
+                    android:fontFamily="@font/grold_rounded_slim"
+                    android:gravity="center"
+                    android:text="REPLAY"
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/tv_title"
+        android:layout_width="242dp"
+        android:layout_height="100dp"
+        android:elevation="12dp"
+        android:src="@drawable/result_bg"
+        app:layout_constraintBottom_toTopOf="@id/layout_total"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/layout_total" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

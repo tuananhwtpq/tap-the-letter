@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name" translatable="false">Base Project</string>
+    <string name="app_name" translatable="false">Tap The Letter Challenge</string>
 
     <string name="admob_app_id" translatable="false">ca-app-pub-3940256099942544~3347511713</string>
     <string name="fb_app_id" translatable="false"></string>
@@ -33,6 +33,8 @@
     <string name="message_intro_1">It has never been easier to become an animator with simple approach</string>
     <string name="message_intro_2">Create animation in your own unique manner with basic drawings</string>
     <string name="message_intro_3">Create animation by drawing a line with your finger.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>

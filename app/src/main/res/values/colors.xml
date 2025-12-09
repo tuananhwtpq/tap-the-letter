@@ -12,4 +12,5 @@
     <color name="tempBg">#FF0099CC</color>
     <color name="mainTextColor">#AC5C29</color>
     <color name="unselected_item">#9FCCFF</color>
+    <color name="orange_Color">#F87400</color>
 </resources>

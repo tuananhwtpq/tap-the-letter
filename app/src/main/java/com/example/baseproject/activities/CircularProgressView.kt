@@ -30,7 +30,7 @@ class CircularProgressView @JvmOverloads constructor(
         val padding = paint.strokeWidth / 2
         rectF.set(padding, padding, width - padding, height - padding)
 
-        val sweepAngle = 360 * (progress / maxProgress)
+        val sweepAngle = -360 * (progress / maxProgress)
         canvas.drawArc(rectF, -90f, sweepAngle, false, paint)
     }
 
